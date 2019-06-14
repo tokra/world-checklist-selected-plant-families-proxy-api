@@ -57,3 +57,18 @@ typings/
 # dotenv environment variables file
 .env
 
+###########################################
+# Custom folders
+reports
+dist
+.scannerwork
+tmp
+
+# Custom files
+*-lock.json
+package-lock.json
+yarn.lock
+*.zip
+buildInfo.json
+
+**/.DS_Store

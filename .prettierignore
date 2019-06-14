@@ -1,0 +1,11 @@
+dist
+tests/a11y-results
+tests/coverage
+/es
+/umd
+/scripts
+/css
+/scss
+/html
+/docs/js
+node_modules
