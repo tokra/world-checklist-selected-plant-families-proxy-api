@@ -1,47 +1,62 @@
 {
-  "name": "world-plant-checklist",
-  "version": "1.0.0",
-  "description": "World plant species search APP",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:to-kra/world-plant-checklist.git"
-  },
-  "keywords": [
-    "plant",
-    "search"
-  ],
-  "author": "tokra.io",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/to-kra/world-plant-checklist/issues"
-  },
-  "dependencies": {
-    "body-parser": "~1.17.1",
-    "cheerio": "^1.0.0-rc.2",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "express": "~4.15.2",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.10",
-    "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2",
-    "string": "^3.3.3",
-    "superagent": "^3.6.0",
-    "underscore.string": "^3.3.4"
-  },
-  "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0",
-    "eslint-config-prettier": "^2.3.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-prettier": "^2.1.2",
-    "prettier": "^1.5.3",
-    "prettier-eslint": "^6.4.2"
-  },
-  "homepage": "https://github.com/to-kra/world-plant-checklist#readme"
+	"name": "world-checklist-selected-plant-families-proxy-api",
+	"version": "2.0.0",
+	"description": "World plant species search APP - Proxy API to World Checklist of Selected Plant Families",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:tokra/world-checklist-selected-plant-families-proxy-api.git"
+	},
+	"keywords": [
+		"plant",
+		"search"
+	],
+	"author": "tokra.io",
+	"license": "Apache-2.0",
+	"engines": {
+		"node": ">=8.x.x",
+		"npm": ">=5.x.x"
+	},
+	"scripts": {
+		"start": "node ./bin/www",
+		"dev": "nodemon ./bin/www",
+		"lint": "npm run format && eslint ./controllers/ ./public/ ./routes/ ./views/",
+		"lint:tests": "eslint ./tests/",
+		"format": "prettier --write '{controllers,public,routes,views}/**/*.js'",
+		"format:tests": "prettier --write '{tests}/**/*.js'",
+		"format:check": "prettier --check '{controllers,public,routes,views}/**/*.js'"
+	},
+	"bugs": {
+		"url": "https://github.com/tokra/world-checklist-selected-plant-families-proxy-api/issues"
+	},
+	"dependencies": {
+		"body-parser": "~1.17.1",
+		"cheerio": "1.0.0-rc.3",
+		"config": "^3.1.0",
+		"cookie-parser": "~1.4.3",
+		"debug": "~2.6.3",
+		"express": "~4.15.2",
+		"express-handlebars": "^3.0.0",
+		"handlebars": "^4.0.10",
+		"js-beautify": "^1.10.0",
+		"lodash": "^4.17.11",
+		"morgan": "~1.8.1",
+		"serve-favicon": "~2.4.2",
+		"string": "^3.3.3",
+		"superagent": "^3.6.0",
+		"underscore.string": "^3.3.4"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-eslint": "^7.2.3",
+		"babel-plugin-istanbul": "^5.1.0",
+		"eslint": "^5.0.0",
+		"eslint-config-airbnb-base": "^13.1.0",
+		"eslint-config-prettier": "^4.0.0",
+		"eslint-plugin-import": "^2.16.0",
+		"eslint-plugin-prettier": "^3.0.1",
+		"nodemon": "^1.19.0",
+		"prettier": "^1.13.0"
+	},
+	"homepage": "https://github.com/tokra/world-checklist-selected-plant-families-proxy-api#readme"
 }
