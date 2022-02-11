@@ -36,7 +36,7 @@
 		"cookie-parser": "~1.4.3",
 		"debug": "~2.6.3",
 		"express": "~4.15.2",
-		"express-handlebars": "^3.0.0",
+		"express-handlebars": "^5.3.1",
 		"handlebars": "^4.0.10",
 		"js-beautify": "^1.10.0",
 		"lodash": "^4.17.11",
