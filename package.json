@@ -35,7 +35,7 @@
 		"config": "^3.1.0",
 		"cookie-parser": "~1.4.3",
 		"debug": "~2.6.3",
-		"express": "~4.15.2",
+		"express": "~4.17.3",
 		"express-handlebars": "^3.0.0",
 		"handlebars": "^4.0.10",
 		"js-beautify": "^1.10.0",
